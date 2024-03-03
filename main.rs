@@ -71,12 +71,7 @@ fn sum(){
     io::stdin().read_line(&mut j);
     let j: f64 = j.trim().parse().expect("Err. Write a num !");          
 
-    println!("Please, write a third num :");  
-    let mut v  = String::new();
-    io::stdin().read_line(&mut v);
-    let v: f64 = v.trim().parse().expect("Err. Write a num !");
-
-    let summa: f64 = k + j + v;
+    let summa: f64 = k + j;
     println!("The result is : {}", summa);
 
     main();
